@@ -1,0 +1,292 @@
+﻿body 
+{
+    background-color: InfoBackground;
+}
+.up
+{
+    background-color: #005677;
+    max-height: 135px;
+    width: 100%;
+    padding: 0px;
+    height: 130px;
+}
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    width: 95%;
+    top: 0px;
+    left: 6px;
+    height: 130px;
+}
+.page
+{
+    width: 960px;
+    border: 1px solid white;
+    margin: 0px auto 0px 140px;
+}
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: 428px;
+    margin-left: 125px;
+    padding: 10px 20px;
+    height: 51px;
+}
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: White;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+}
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    float: right;
+    text-align: right;
+    padding: 20px;
+    color: White;
+    height: 20px;
+    width: 510px;
+    
+}
+.loginDisplay a:link
+{
+    color: White;
+}
+.loginDisplay a:visited
+{
+    color: White;
+}
+.loginDisplay a:hover
+{
+    color: White;
+}
+div.hideskiplink
+{
+    background-color: #F47902;
+    display: block;
+    float: left;
+    text-align: left;
+    margin-left: 137px;
+    margin-top: 10px;
+    height: 33px;
+    width: 940px;
+    padding: 7px 20px;
+}
+.div.menu
+{
+    text-align: left;
+}
+div.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+div.menu ul li a,div.menuul li a:visited
+{
+    background-color: #B00000;
+    border: 1px #DA363A solid;
+    font-family: Times New Roman;
+    font-size: large;
+    font-weight: bold;
+    color: #dde4ec;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+div.menu ul li a:hover
+{
+    background-color: #FFFF53;
+    color: Black;
+    text-decoration: none;
+}
+div.menu ul li a:active
+{
+    background-color: #FFFF53;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+.btnCart
+{
+    width:100px;
+    height: 34px;
+    float:right;
+}
+.main
+{
+    width: 980px;
+    padding: 0px;
+    margin: 0px 0px;
+    font-size: 13px;
+    line-height: 25px;
+    border-width: 1px;
+    border-color: Gray;
+    border-style: solid;
+    background-color: White;
+}
+.cph
+{
+    height: 900px;
+    width: 960px;
+}
+.adrot
+{
+    padding: 10px 50px 10px 50px;
+    width: 876px;
+    height: 480px;
+    
+}
+.ad
+{
+    width: 860px;
+    height: 480px;
+    border-color: White;
+    border-width: medium;
+    border-style: solid;
+}
+.imgmp
+{
+    padding: 5px 0px 1px 0px;
+}
+.imp
+{
+    border: 10px solid Gray;
+    width: 290px;
+    height: 150px;
+}
+.mar
+{
+    margin-left: 21px;
+}
+.mar1
+{
+    margin-left: 0px;
+}
+.bstrip
+{
+    width: 960px;
+    margin: 0px auto 0px 140px;
+}
+.footer
+{
+    background-color: #005677;
+    width: 980px;
+    height: 115px;
+    margin: 0px auto 0px 140px;
+}
+.col1
+{
+    float: left;
+    padding: 5px 0px 0px 0px;
+    width: 300px;
+    height: 105px;
+    margin-left: 38px;
+}
+.col2
+{
+    float: left;
+    padding: 5px 0px 0px 0px;
+    width: 300px;
+    height: 105px;
+}
+.lbl
+{
+    color: Yellow;
+    font-weight: 900;
+    font-size: larger;
+}
+div.mn
+{
+    text-align: left;
+    color: Black;
+}
+div.mn ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 2px;
+    width: auto;
+    color: Black;
+}
+div.mn ul li a,div.mnul li a:visited
+{
+    font-family: Times New Roman;
+    font-size: medium;
+    display: block;
+    color: White;
+    text-decoration: none;
+    white-space: nowrap;
+}
+div.mn ul li a:hover
+{
+    background-color: White;
+    color: Black;
+    text-decoration: none;
+    font-weight: bold;
+}
+div.mn ul li a:active
+{
+    background-color: white;
+    color: Black;
+    text-decoration: none;
+}
+.lside
+{
+    float: left;
+    width: 200px;
+    text-align: left;
+}
+.rside
+{
+    margin-left: 200px;
+}
+.mhead
+{
+    font-weight: bold;
+    background-color: #5C8FAB;
+    color: White;
+    font-size: x-large;
+}
+.mtitle
+{
+    background-color: Menu;
+    font-weight:bold;
+    font-size: large;
+}
+.item
+{   
+    padding: 0px 0px 0px 15px;
+    font-size: 15px;
+    
+    
+    background-color: White;
+    border-bottom-width: 1px;
+    border-bottom-color: Black;
+    border-bottom-style: dotted;
+}
+.item a:hover
+{
+    background-color: Menu;
+    color: Black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: medium;
+}
+.bb
+{
+    color: #0082B3;
+    text-decoration: none;
+}

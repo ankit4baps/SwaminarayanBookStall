@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/Home.aspx" title="Swaminarayan BookStall"  description="Home Page">
+        <siteMapNode url="" title="Publication"  description="" >
+          <siteMapNode url="~/Publication/Gujarati.aspx" title="Gujarati"  description="Gujarati Publication" />
+          <siteMapNode url="~/Publication/English.aspx" title="English"  description="English Publication" />
+          <siteMapNode url="~/Publication/Hindi.aspx" title="Hindi"  description="Hindi Publication" />
+          <siteMapNode url="~/Publication/Marathi.aspx" title="Marathi"  description="Marathi Publication" />
+        </siteMapNode>
+        <siteMapNode url="" title="Audio"  description="" >
+          <siteMapNode url="~/Publication/AudioCds.aspx" title="Audio CD's"  description="Audio" />
+          <siteMapNode url="~/Publication/MP3.aspx" title="MP3 CD's"  description="MP3" />
+        </siteMapNode>
+        <siteMapNode url="" title="Video"  description="" >
+          <siteMapNode url="~/Publication/SatsangDarshan.aspx" title="Satsang Darshan Part"  description="Satsang Darshan Video" />
+          <siteMapNode url="~/Publication/DVDs.aspx" title="DVDs"  description="Other Video" />
+        </siteMapNode>
+        <siteMapNode url="~/Ebook.aspx" title="E-Book" description="Downloading E-Book">
+        </siteMapNode>
+        <siteMapNode url="~/search.aspx" title="Search" description="Searching Items">
+        </siteMapNode>
+       <siteMapNode url="" title="Registration"  description="" >
+         <siteMapNode url="~/Registration/login.aspx" title="Login"  description="User Login" />
+         <siteMapNode url="~/Registration/NewUser.aspx" title="New User"  description="New User" />
+         <siteMapNode url="~/Registration/changePass.aspx" title="Change Password"  description="Password Changer" />
+         <siteMapNode url="~/Registration/PersonalInfo.aspx" title="Personal Information"  description="User Personal Information" />
+         <siteMapNode url="~/Registration/AddressDetail.aspx" title="Address Detail"  description="User AddressDetail" />
+       </siteMapNode>
+    </siteMapNode>
+</siteMap>

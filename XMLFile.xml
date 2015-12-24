@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>~/Image/Slider/Slide1.jpg</ImageUrl>
+    <NavigateUrl>~/Exam E-Book.aspx</NavigateUrl>
+    <AlternateText>Satsang Exam E-Book</AlternateText>
+    <Impressions>50</Impressions>
+    <Keyword></Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/Image/Slider/Slider2.jpg</ImageUrl>
+    <NavigateUrl>~/Other Book.aspx</NavigateUrl>
+    <AlternateText>Vachanamrut Swamini Vato</AlternateText>
+    <Impressions>50</Impressions>
+    <Keyword></Keyword>
+  </Ad>
+</Advertisements>

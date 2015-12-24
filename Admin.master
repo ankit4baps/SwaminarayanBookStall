@@ -1,0 +1,259 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="Styles/homeStyle.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="header">
+    <div class="up">
+        <div class="title">
+            <asp:ImageMap ID="ImageMap4" runat="server" BorderStyle="None" Height="50px" 
+                ImageUrl="~/Image/Logos/logoFinal.png" Width="430px">
+                <asp:RectangleHotSpot AlternateText="Swaminarayan BookStall" Bottom="50" 
+                    HotSpotMode="Navigate" Left="10" NavigateUrl="~/Home.aspx" Right="580" />
+            </asp:ImageMap>
+        </div>
+        <div class="loginDisplay">
+            
+          <div style="float:left; width: 365px;">
+                <asp:Label ID="Label4" runat="server"></asp:Label>
+            
+                 <asp:HyperLink ID="HyperLink1" runat="server" 
+                    NavigateUrl="~/Registration/login.aspx">Login</asp:HyperLink>
+          </div>  
+            
+            
+            <asp:Menu ID="Menu3" runat="server" Orientation="Horizontal" CssClass="mn" 
+                EnableViewState="False" IncludeStyleBlock="False">
+                <Items>
+                    <asp:MenuItem Text="Menu" Value="Menu">
+                        <asp:MenuItem NavigateUrl="~/Admin/InsertItem.aspx" 
+                            Text="Items" Value="items"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Admin/orderList.aspx" 
+                            Text="Order" Value="Order"></asp:MenuItem>
+                        <asp:MenuItem Text="Users" 
+                            Value="Users" NavigateUrl="~/Admin/listUser.aspx"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Admin/AdminFeedbackCheck.aspx" Text="Feedback" 
+                            Value="feedback"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Registration/logout.aspx" Text="Logout" 
+                            Value="Logout"></asp:MenuItem>
+                    </asp:MenuItem>
+                </Items>
+            </asp:Menu>
+            
+        </div>
+        <div class="hideskiplink">
+            
+            <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" CssClass="menu" 
+                EnableViewState="False" IncludeStyleBlock="False">
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                    <asp:MenuItem Text="Publication" Value="Publication">
+                        <asp:MenuItem Text="Gujarati" Value="Gujarati" 
+                            NavigateUrl="~/Publication/Gujarati.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="English" Value="English" 
+                            NavigateUrl="~/Publication/English.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Hindi" Value="Hindi" NavigateUrl="~/Publication/Hindi.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Marathi" Value="Marathi" 
+                            NavigateUrl="~/Publication/Marathi.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Audio" Value="Audio">
+                        <asp:MenuItem Text="Audio CDs" Value="Audio CDs" 
+                            NavigateUrl="~/Publication/AudioCds.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="MP3 CDs" Value="MP3 CDs" 
+                            NavigateUrl="~/Publication/MP3.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Video" Value="Video">
+                        <asp:MenuItem Text="Satsang Darshan Parts" Value="SatsangDarshan" 
+                            NavigateUrl="~/Publication/SatsangDarshan.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="DVDs" Value="DVDs" NavigateUrl="~/Publication/DVDs.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="E-Books" Value="E-Books" NavigateUrl="~/Ebook.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Search" Value="Search" NavigateUrl="~/search.aspx">
+                    </asp:MenuItem>
+                </Items>
+            </asp:Menu>
+            
+            <br />
+            
+        </div>
+    </div>        
+    </div>
+    <div class="page">
+        <div class="main">
+        <div class="lside">
+            
+            <table class="style1">
+                <tr>
+                    <td class="mhead">
+                        Administrator</td>
+                </tr>
+                <tr>
+                    <td class="mtitle">
+                        Items</td>
+                </tr>
+                <tr class="bb">
+                    <td class="item">
+                        <asp:HyperLink ID="HyperLink11" runat="server" CssClass="bb" 
+                            NavigateUrl="~/Admin/InsertItem.aspx">Add New Item</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr class="bb">
+                    <td class="item">
+                        <asp:HyperLink ID="HyperLink12" runat="server" CssClass="bb" 
+                            NavigateUrl="~/Admin/UpdateItem.aspx">Update Item</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr class="bb">
+                    <td class="item">
+                        <asp:HyperLink ID="HyperLink13" runat="server" CssClass="bb" 
+                            NavigateUrl="~/Admin/DeleteItem.aspx">Delete Item</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mtitle">
+                        Users</td>
+                </tr>
+                <tr class="bb">
+                    <td class="item">
+                        <asp:HyperLink ID="HyperLink14" runat="server" CssClass="bb" 
+                            NavigateUrl="~/Admin/ManageUser.aspx">Manage User</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr class="bb">
+                    <td class="item">
+                        <asp:HyperLink ID="HyperLink25" runat="server" CssClass="bb" 
+                            NavigateUrl="~/Admin/listUser.aspx">All Users</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mtitle">
+                        Orders</td>
+                </tr>
+                <tr>
+                    <td class="item">
+                        <asp:HyperLink ID="HyperLink19" runat="server" CssClass="bb" 
+                            NavigateUrl="~/Admin/orderList.aspx">Order List</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">
+                        <asp:HyperLink ID="HyperLink20" runat="server" CssClass="bb" 
+                            NavigateUrl="~/Admin/orderStatusUpdate.aspx">Order Status Update</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">
+                        <asp:HyperLink ID="HyperLink21" runat="server" CssClass="bb" 
+                            NavigateUrl="~/Admin/orderShippingAddress.aspx">Order Shipping Address</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mtitle">
+                        Feedback</td>
+                </tr>
+                <tr>
+                    <td class="item">
+                        <asp:HyperLink ID="HyperLink16" runat="server" CssClass="bb" 
+                            NavigateUrl="~/Admin/AdminFeedbackCheck.aspx">Check Feedback</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mtitle">
+                        My Account</td>
+                </tr>
+                <tr>
+                    <td class="item">
+                        <asp:HyperLink ID="HyperLink24" runat="server" CssClass="bb" 
+                            NavigateUrl="~/Admin/PersonalInfo.aspx">Personal Info</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">
+                        <asp:HyperLink ID="HyperLink23" runat="server" CssClass="bb" 
+                            NavigateUrl="~/Admin/AddressDetail.aspx">Address Detail</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">
+                        <asp:HyperLink ID="HyperLink18" runat="server" CssClass="bb" 
+                            NavigateUrl="~/Registration/logout.aspx">Logout</asp:HyperLink>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+            <div class="rside">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+    <div class="bstrip">
+            <asp:Image ID="Image2" runat="server" Height="15px" 
+            ImageUrl="~/Image/bottomstrip.gif" Width="980px" />
+    </div>
+    <div class="footer">
+        <div class="col2">
+            
+            &nbsp;<asp:Label ID="Label1" runat="server" CssClass="lbl" 
+                Text="Swaminarayan BookStall"></asp:Label>
+            <br />
+            &nbsp;<asp:HyperLink ID="HyperLink2" runat="server" ForeColor="White">About Us</asp:HyperLink>
+            <br />
+            &nbsp;<asp:HyperLink ID="HyperLink3" runat="server" ForeColor="White">Contact Us</asp:HyperLink>
+            <br />
+            &nbsp;<asp:HyperLink ID="HyperLink4" runat="server" ForeColor="White">Feedback</asp:HyperLink>
+            <br />
+            &nbsp;<asp:HyperLink ID="HyperLink5" 
+                runat="server" ForeColor="White" Font-Underline="False" 
+                NavigateUrl="~/Sitemap.aspx">SiteMap</asp:HyperLink>
+            
+        </div>
+        <div class="col1">
+            
+            <asp:Label ID="Label2" runat="server" CssClass="lbl" Text="Help"></asp:Label>
+            <br />
+            <asp:HyperLink ID="HyperLink6" runat="server" ForeColor="White" 
+                Font-Underline="False" NavigateUrl="~/payments.aspx">Payments</asp:HyperLink>
+            <br />
+            <asp:HyperLink ID="HyperLink7" runat="server" ForeColor="White" 
+                Font-Underline="False" NavigateUrl="~/shipping.aspx">Shipping</asp:HyperLink>
+            
+        </div>
+        <div class="col1">
+            
+            <asp:Label ID="Label3" runat="server" CssClass="lbl" Text="Polices"></asp:Label>
+            <br />
+            <asp:HyperLink ID="HyperLink8" runat="server" ForeColor="White" 
+                Font-Underline="False" NavigateUrl="~/terms.aspx">Terms of Use</asp:HyperLink>
+            <br />
+            <asp:HyperLink ID="HyperLink9" runat="server" ForeColor="White" 
+                Font-Underline="False" NavigateUrl="~/security.aspx">Security</asp:HyperLink>
+            <br />
+            <asp:HyperLink ID="HyperLink10" runat="server" ForeColor="White" 
+                Font-Underline="False" NavigateUrl="~/privacy.aspx">Privacy</asp:HyperLink>
+            <br />
+            
+        </div>
+    </div>
+    <div class="page" style="text-align:center">
+        &copy SwaminarayanBookStall 2012-13
+    </div>
+    
+    </form>
+</body>
+</html>
